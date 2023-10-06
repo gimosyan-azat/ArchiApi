@@ -16,4 +16,4 @@ RUN dotnet publish --use-current-runtime --self-contained false --no-restore -o 
 FROM mcr.microsoft.com/dotnet/aspnet:7.0
 WORKDIR /app
 COPY --from=build /app .
-ENTRYPOINT ["dotnet", "archiapi.dll"]
+ENTRYPOINT ["dotnet", "ArchiApi.dll"]
